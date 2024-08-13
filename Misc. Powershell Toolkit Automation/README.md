@@ -9,9 +9,6 @@ This folder contains two AutoHotkey scripts designed to simplify the execution o
 - **Purpose**: This script allows you to select and run any PowerShell script with administrator privileges.
 
 - Key Features
-
-  :
-
   - Custom tray icon for easy identification.
   - File selection dialog to choose the script.
   - Bypasses execution policy restrictions.
@@ -22,9 +19,6 @@ This folder contains two AutoHotkey scripts designed to simplify the execution o
 - **Purpose**: This script checks if the selected PowerShell script has an associated scheduled task. If so, it runs the task; otherwise, it runs the script directly with administrator privileges.
 
 - Key Features
-
-  :
-
   - Custom tray icon for easy identification.
   - Opens file selection dialog in a predefined folder.
   - Checks for existing scheduled tasks.
