@@ -8,7 +8,7 @@ This folder contains two AutoHotkey scripts designed to simplify the execution o
 
 - **Purpose**: This script allows you to select and run any PowerShell script with administrator privileges.
 
-- Key Features
+- Key Features:
   - Custom tray icon for easy identification.
   - File selection dialog to choose the script.
   - Bypasses execution policy restrictions.
@@ -18,7 +18,7 @@ This folder contains two AutoHotkey scripts designed to simplify the execution o
 
 - **Purpose**: This script checks if the selected PowerShell script has an associated scheduled task. If so, it runs the task; otherwise, it runs the script directly with administrator privileges.
 
-- Key Features
+- Key Features:
   - Custom tray icon for easy identification.
   - Opens file selection dialog in a predefined folder.
   - Checks for existing scheduled tasks.
@@ -33,9 +33,9 @@ This folder contains two AutoHotkey scripts designed to simplify the execution o
 ## Installation
 
 1. **AutoHotkey Installation**: Ensure that AutoHotkey v2.x is installed on your system. You can download it from the [official AutoHotkey website](https://www.autohotkey.com/).
-2. **Script Location**: Save both `.ahk` files (`powershell_runasadmin.ahk` and `PowerShellScheduledLauncher.ahk`) in a folder of your choice.
+2. **Script Location**: Save both `.ahk` files (`powershell_runasadmin.ahk` and `powershell_elevated.ahk`) in a folder of your choice.
 3. **Tray Icon**: Ensure the custom icon file (`powershell_toolkit_icon.ico`) is located at `c:\Users\pfilkin\Documents\WindowsPowerShell\Scripts\Images\` or update the scripts to point to the correct path for your environment.
-4. **Default Folder for Scheduled Script**: Modify the `defaultFolder` variable in `PowerShellScheduledLauncher.ahk` to point to the folder where your PowerShell scripts are stored if it differs from the default.
+4. **Default Folder for Scheduled Script**: Modify the `defaultFolder` variable in `powershell_elevated.ahk` to point to the folder where your PowerShell scripts are stored if it differs from the default.
 
 ## Usage
 
@@ -46,9 +46,9 @@ This folder contains two AutoHotkey scripts designed to simplify the execution o
 3. **Select a PowerShell Script**: In the file selection dialog, navigate to and select the PowerShell script (`.ps1`) you wish to run.
 4. **Script Execution**: The selected script will be executed with administrator privileges, bypassing any execution policy restrictions.
 
-### Running `PowerShellScheduledLauncher.ahk`
+### Running `powershell_elevated.ahk`
 
-1. **Run the Script**: Double-click the `PowerShellScheduledLauncher.ahk` file to start the script. A custom icon should appear in your system tray.
+1. **Run the Script**: Double-click the `powershell_elevated.ahk` file to start the script. A custom icon should appear in your system tray.
 2. **Using the Hotkey**: Press `Ctrl + Shift + R` to trigger the script. A file selection dialog will appear, starting in the default folder specified.
 3. **Select a PowerShell Script**: In the file selection dialog, navigate to and select the PowerShell script (`.ps1`) you wish to run.
 4. **Script or Task Execution**:
@@ -59,8 +59,8 @@ This folder contains two AutoHotkey scripts designed to simplify the execution o
 
 - **Hotkey**: The default hotkey for both scripts is `Ctrl + Shift + R`. You can change this by modifying the `^+r::` part of the script. Refer to the AutoHotkey documentation for different key combinations.
 - **Tray Icon**: You can customise the tray icon by replacing the path to the icon file in the `TraySetIcon` command in both scripts.
-- **Default Folder**: In `PowerShellScheduledLauncher.ahk`, modify the `defaultFolder` variable to point to the folder where your PowerShell scripts are stored.
-- **Scheduled Task Name**: The `PowerShellScheduledLauncher.ahk` script uses the name of the PowerShell script (without the `.ps1` extension) as the task name. Ensure that your scheduled task names match this format.
+- **Default Folder**: In `powershell_elevated.ahk`, modify the `defaultFolder` variable to point to the folder where your PowerShell scripts are stored.
+- **Scheduled Task Name**: The `powershell_elevated.ahk` script uses the name of the PowerShell script (without the `.ps1` extension) as the task name. Ensure that your scheduled task names match this format.
 
 ## Troubleshooting
 
