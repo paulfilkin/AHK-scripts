@@ -1,6 +1,6 @@
 # PowerShell Script Runner
 
-This AutoHotkey script allows you to quickly select and execute PowerShell scripts by using a predefined hotkey. Depending on the location of the script you select, it will be run either in 32-bit or 64-bit mode.
+This AutoHotkey script allows you to quickly select and execute PowerShell scripts by using a predefined hotkey. Depending on the location of the script you select, it will be run either in 32-bit or 64-bit mode.  I created this because I run scripts in 32-bit and 64-bit mode and I found this a much easier way to work than by using the command line all the time.  All my 32-bit scripts relate to one application - Trados Studio.
 
 ## Features
 
