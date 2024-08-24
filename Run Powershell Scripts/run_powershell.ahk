@@ -1,5 +1,6 @@
 ; Set a custom tray icon
-TraySetIcon("c:\Users\pfilkin\Documents\Scripts\AutoHotkey\Run Powershell Scripts\powershell_toolkit_icon.ico", 1, true) ; Set your own path here
+iconPath := A_ScriptDir "\powershell_toolkit_icon.ico"  ; Icon should be in the same directory as the script
+TraySetIcon(iconPath, 1, true)
 
 ; Define the hotkey (e.g., Ctrl+Shift+R)
 ^+r::
@@ -12,7 +13,7 @@ TraySetIcon("c:\Users\pfilkin\Documents\Scripts\AutoHotkey\Run Powershell Script
         return  ; Exit the hotkey action
 
     ; Check if the script path starts with the specified directory
-    if InStr(filePath, "c:\Users\pfilkin\Documents\StudioPowershellToolkit\") = 1
+    if InStr(filePath, "c:\Users\paul\Documents\Production Scripts\Powershell\StudioPowershellToolkit\") = 1  ; Make sure you adapt to suit where you place the scripts you'll run as 32-bit
     {
         ; Run in 32-bit mode
         Run('C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NoExit -File "' . filePath . '"')
